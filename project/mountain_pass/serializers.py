@@ -24,7 +24,7 @@ class ImageSerializer(serializers.ModelSerializer):
         fields = ['title', 'image']
 
 class PerevalSerializer(WritableNestedModelSerializer):
-    
+
     add_time = serializers.DateTimeField(format='%Y-%m-%d %H:%M:%S', read_only=True)
     user = AppUserSerializer()
     coords = CoordsSerializer()
