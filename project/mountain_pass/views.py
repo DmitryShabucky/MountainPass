@@ -9,6 +9,7 @@ from .serializers import PerevalSerializer, CoordsSerializer, LevelSerializer, I
 class PerevalViewset(viewsets.ModelViewSet):
     queryset = Pereval.objects.all()
     serializer_class = PerevalSerializer
+    filterset_fields = ('user__email',)
 
     def create(self, request, *args, **kwargs):
 
