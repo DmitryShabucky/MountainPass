@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
   <component name="Black">
     <option name="sdkName" value="Python 3.12 virtualenv at C:\Users\Dimec\OneDrive\Рабочий стол\Skill Factory\Проверочные работы\Итоговый поект\Спринт\1\Mountain pass\venv" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (6)" project-jdk-type="Python SDK" />
+=======
+>>>>>>> submitDAta
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 virtualenv at C:\Users\Dimec\OneDrive\Рабочий стол\Skill Factory\Проверочные работы\Итоговый поект\Спринт\1\Mountain pass\venv" project-jdk-type="Python SDK" />
+>>>>>>> main
 </project>

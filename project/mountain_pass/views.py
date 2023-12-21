@@ -9,6 +9,7 @@ from .serializers import PerevalSerializer, CoordsSerializer, LevelSerializer, I
 class PerevalViewset(viewsets.ModelViewSet):
     queryset = Pereval.objects.all()
     serializer_class = PerevalSerializer
+    filterset_fields = ('user__email',)
 
     def create(self, request, *args, **kwargs):
 
@@ -35,6 +36,32 @@ class PerevalViewset(viewsets.ModelViewSet):
                 'id': serializer.data.get('id')
             }
         return Response(response)
+
+    def partial_update(self, request, *args, **kwargs):
+
+        instance = self.get_object()
+        serializer = PerevalSerializer(instance, data=request.data, partial=True)
+
+        if request.data['status'] == 'NEW':
+            if serializer.is_valid():
+                serializer.save()
+                response = {
+                    'state': 1,
+                    'message': 'Успешное изменение данных.'
+                }
+                return Response(response, status=status.HTTP_200_OK)
+            else:
+                response = {
+                    'state': 0,
+                    'message': 'Данные о пользователе менять нельзя!'
+                }
+                return Response(response, status=status.HTTP_451_UNAVAILABLE_FOR_LEGAL_REASONS)
+        else:
+            response = {
+                'state': 0,
+                'message': 'Ошибка. Данные проходят модерацию.'
+            }
+            return Response(response, status=status.HTTP_204_NO_CONTENT)
 
 class AppUserViewset(viewsets.ModelViewSet):
     queryset = AppUser.objects.all()
