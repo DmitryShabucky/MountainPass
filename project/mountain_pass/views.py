@@ -13,8 +13,9 @@ class PerevalViewset(viewsets.ModelViewSet):
     def create(self, request, *args, **kwargs):
 
         serializer = PerevalSerializer(data=request.data)
-
+        
         if serializer.is_valid():
+
             serializer.save()
             response = {
                 'status': 200,
