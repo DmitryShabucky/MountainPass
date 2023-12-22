@@ -28,8 +28,31 @@ class PerevalSerializer(WritableNestedModelSerializer):
     add_time = serializers.DateTimeField(format='%Y-%m-%d %H:%M:%S', read_only=True)
     user = AppUserSerializer()
     coords = CoordsSerializer()
-    level = LevelSerializer()
+    level = LevelSerializer(allow_null=True)
     images = ImageSerializer(many=True)
+
+    class Meta:
+        model = Pereval
+        fields = ['status', 'beauty_title', 'title', 'other_title', 'connect', 'add_time', 'user', 'coords', 'level',
+                  'images']
+
+    def create(self, validated_data, **kwargs):
+        user = validated_data.pop('user')
+        coords = validated_data.pop('coords')
+        level = validated_data.pop('level')
+        images = validated_data.pop('images')
+
+        user, created = AppUser.objects.get_or_create(**user)
+
+        coords = Coords.objects.create(**coords)
+        level = Level.objects.create(**level)
+        pereval = Pereval.objects.create(**validated_data, user=user, coords=coords, level=level)
+
+        for im in images:
+            image = im.pop('image')
+            title = im.pop('title')
+            Image.objects.create(title=title, image=image, perval=pereval)
+        return pereval
 
     def validate(self, value):
 
@@ -44,7 +67,4 @@ class PerevalSerializer(WritableNestedModelSerializer):
                 raise serializers.ValidationError()
         return value
 
-    class Meta:
-        model = Pereval
-        fields = ['status', 'beauty_title', 'title', 'other_title', 'connect', 'add_time', 'user', 'coords', 'level',
-                  'images']
+
