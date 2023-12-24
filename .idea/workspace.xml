@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b8605ee8-d6e2-43f7-9799-92262967e898" name="Changes" comment="refactored code serializers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0002_alter_appuser_email.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0003_alter_coords_height.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0004_alter_coords_height.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0005_alter_pereval_status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0006_alter_coords_height_alter_coords_latitude_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0007_alter_coords_height_alter_coords_latitude_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/mountain_pass/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mountain_pass/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +104,7 @@
       <workItem from="1702911245685" duration="4772000" />
       <workItem from="1702916674561" duration="4795000" />
       <workItem from="1703237893496" duration="93000" />
-      <workItem from="1703238045578" duration="6993000" />
+      <workItem from="1703238045578" duration="11899000" />
     </task>
     <task id="LOCAL-00001" summary="refactored code serializers">
       <option name="closed" value="true" />

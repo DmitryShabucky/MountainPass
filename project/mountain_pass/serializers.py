@@ -51,7 +51,7 @@ class PerevalSerializer(WritableNestedModelSerializer):
         for im in images:
             image = im.pop('image')
             title = im.pop('title')
-            Image.objects.create(title=title, image=image, perval=pereval)
+            Image.objects.create(title=title, image=image, pereval=pereval)
         return pereval
 
     def validate(self, value):
