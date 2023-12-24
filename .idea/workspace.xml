@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8605ee8-d6e2-43f7-9799-92262967e898" name="Changes" comment="refactored code serializers" />
+    <list default="true" id="b8605ee8-d6e2-43f7-9799-92262967e898" name="Changes" comment="refactored code serializers">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0002_alter_appuser_email.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0003_alter_coords_height.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0004_alter_coords_height.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0005_alter_pereval_status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/serializers.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,10 +52,11 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.settings.executor": "Run",
+    "Python.views.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "filterData",
+    "git-widget-placeholder": "Merging main",
     "last_opened_file_path": "C:/Users/Dimec/OneDrive/Рабочий стол/Skill Factory/pythonProject/pythonProject7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -68,7 +79,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-7a29c1521ef0-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.298" />
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
       </set>
     </attachedChunks>
   </component>
@@ -91,6 +102,8 @@
       <workItem from="1702746703956" duration="15985000" />
       <workItem from="1702911245685" duration="4772000" />
       <workItem from="1702916674561" duration="4795000" />
+      <workItem from="1703237893496" duration="93000" />
+      <workItem from="1703238045578" duration="12593000" />
     </task>
     <task id="LOCAL-00001" summary="refactored code serializers">
       <option name="closed" value="true" />
@@ -112,5 +125,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Mountain_pass$settings.coverage" NAME="settings Coverage Results" MODIFIED="1702452623970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/project" />
+    <SUITE FILE_PATH="coverage/Mountain_pass$views.coverage" NAME="views Coverage Results" MODIFIED="1703160573396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/mountain_pass" />
   </component>
 </project>

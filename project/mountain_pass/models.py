@@ -8,6 +8,10 @@ class AppUser(models.Model):
     name = models.CharField(max_length=20, verbose_name='Имя')
     otc = models.CharField(max_length=20, verbose_name='Отчество')
 
+    class Meta:
+        verbose_name = 'Пользователь'
+        verbose_name_plural = 'Пользователи'
+
     def __str__(self):
         return f'{self.fam} {self.name} {self.otc}'
 
@@ -33,17 +37,25 @@ class Pereval(models.Model):
     add_time = models.DateTimeField(auto_now_add=True, verbose_name="Время добавления")
     user = models.ForeignKey(AppUser, on_delete=models.CASCADE, verbose_name="Пользователь")
     status = models.CharField(max_length=3, choices=POSITIONS, default='NEW', verbose_name="Статус проверки")
+    level = models.OneToOneField('Level', on_delete=models.CASCADE, verbose_name="Уровень")
+    coords = models.OneToOneField('Coords', on_delete=models.CASCADE, verbose_name="Координаты")
+
+    class Meta:
+        verbose_name = 'Перевал'
+        verbose_name_plural = 'Перевалы'
 
     def __str__(self):
         return f'{self.beauty_title}, {self.title}, {self.other_title}.'
 
 
 class Coords(models.Model):
-    pereval = models.OneToOneField(Pereval, on_delete=models.CASCADE, verbose_name="Перевал")
     latitude = models.FloatField(max_length=10, blank=False, verbose_name='Широта')
     longitude = models.FloatField(max_length=10, blank=False, verbose_name="Долгота")
     height = models.IntegerField(blank=False, verbose_name='Высота')
 
+    class Meta:
+        verbose_name = 'Координат'
+        verbose_name_plural = 'Координаты'
     def __str__(self):
         return f'{self.pereval}'
 
@@ -62,11 +74,15 @@ class Level(models.Model):
         (rough, 'Сурово'),
         (very_rough, 'Очень сурово')
     ]
-    pereval = models.OneToOneField(Pereval, on_delete=models.CASCADE, verbose_name="Перевал")
+
     winter = models.CharField(max_length=2, choices=POSITIONS, verbose_name="Зимой")
     summer = models.CharField(max_length=2, choices=POSITIONS, verbose_name="Летом")
     autumn = models.CharField(max_length=2, choices=POSITIONS, verbose_name="Осенью")
     spring = models.CharField(max_length=2, choices=POSITIONS, verbose_name="Весной")
+
+    class Meta:
+        verbose_name = 'Уровень'
+        verbose_name_plural = 'Уровни'
 
     def __str__(self):
         return f'{self.pereval}'
@@ -76,6 +92,10 @@ class Image(models.Model):
     pereval = models.ForeignKey(Pereval, on_delete=models.CASCADE, verbose_name="Перевал", related_name='images')
     title = models.CharField(max_length=50, blank=True, null=True, verbose_name="Пометка")
     image = models.TextField(blank=False, null=True, verbose_name="Ссылка на изображение")
+
+    class Meta:
+        verbose_name = 'Изображение'
+        verbose_name_plural = 'Изображения'
 
     def __str__(self):
         return f'{self.pereval}'
