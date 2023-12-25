@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8605ee8-d6e2-43f7-9799-92262967e898" name="Changes" comment="refactored code serializers">
+      <change afterPath="$PROJECT_DIR$/project/mountain_pass/templates/swagger-ui.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/static/openapi-schema.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mountain_pass/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/project/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -44,12 +48,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "Python.settings.executor": "Run",
     "Python.views.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "swagger",
     "last_opened_file_path": "C:/Users/Dimec/OneDrive/Рабочий стол/Skill Factory/pythonProject/pythonProject7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -96,7 +101,7 @@
       <workItem from="1702911245685" duration="4772000" />
       <workItem from="1702916674561" duration="4795000" />
       <workItem from="1703237893496" duration="93000" />
-      <workItem from="1703238045578" duration="28111000" />
+      <workItem from="1703238045578" duration="30720000" />
     </task>
     <task id="LOCAL-00001" summary="refactored code serializers">
       <option name="closed" value="true" />
