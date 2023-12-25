@@ -56,8 +56,7 @@ class Coords(models.Model):
     class Meta:
         verbose_name = 'Координат'
         verbose_name_plural = 'Координаты'
-    def __str__(self):
-        return f'{self.coords}'
+
 
 
 class Level(models.Model):
@@ -83,9 +82,6 @@ class Level(models.Model):
     class Meta:
         verbose_name = 'Уровень'
         verbose_name_plural = 'Уровни'
-
-    def __str__(self):
-        return f'{self.level}'
 
 
 class Image(models.Model):
