@@ -37,8 +37,8 @@ class Pereval(models.Model):
     add_time = models.DateTimeField(auto_now_add=True, verbose_name="Время добавления")
     user = models.ForeignKey(AppUser, on_delete=models.CASCADE, verbose_name="Пользователь")
     status = models.CharField(max_length=3, choices=POSITIONS, default='NEW', verbose_name="Статус проверки")
-    level = models.OneToOneField('Level', on_delete=models.CASCADE, verbose_name="Уровень")
-    coords = models.OneToOneField('Coords', on_delete=models.CASCADE, verbose_name="Координаты")
+    level = models.OneToOneField('Level', on_delete=models.CASCADE, verbose_name="Уровень", related_name="level")
+    coords = models.OneToOneField('Coords', on_delete=models.CASCADE, verbose_name="Координаты", related_name='coords')
 
     class Meta:
         verbose_name = 'Перевал'
@@ -57,7 +57,7 @@ class Coords(models.Model):
         verbose_name = 'Координат'
         verbose_name_plural = 'Координаты'
     def __str__(self):
-        return f'{self.pereval}'
+        return f'{self.coords}'
 
 
 class Level(models.Model):
@@ -85,7 +85,7 @@ class Level(models.Model):
         verbose_name_plural = 'Уровни'
 
     def __str__(self):
-        return f'{self.pereval}'
+        return f'{self.level}'
 
 
 class Image(models.Model):
