@@ -75,10 +75,10 @@ class Level(models.Model):
         (very_rough, 'Очень сурово')
     ]
 
-    winter = models.CharField(max_length=2, choices=POSITIONS, verbose_name="Зимой")
-    summer = models.CharField(max_length=2, choices=POSITIONS, verbose_name="Летом")
-    autumn = models.CharField(max_length=2, choices=POSITIONS, verbose_name="Осенью")
-    spring = models.CharField(max_length=2, choices=POSITIONS, verbose_name="Весной")
+    winter = models.CharField(max_length=2, blank=True, choices=POSITIONS, verbose_name="Зимой")
+    summer = models.CharField(max_length=2, blank=True, choices=POSITIONS, verbose_name="Летом")
+    autumn = models.CharField(max_length=2, blank=True, choices=POSITIONS, verbose_name="Осенью")
+    spring = models.CharField(max_length=2, blank=True, choices=POSITIONS, verbose_name="Весной")
 
     class Meta:
         verbose_name = 'Уровень'
