@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8605ee8-d6e2-43f7-9799-92262967e898" name="Changes" comment="refactored code serializers">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0002_alter_appuser_email.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0003_alter_coords_height.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0004_alter_coords_height.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mountain_pass/migrations/0005_alter_pereval_status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/mountain_pass/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/mountain_pass/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/mountain_pass/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Dimec/OneDrive/Рабочий стол/Skill Factory/pythonProject/pythonProject7",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -103,7 +97,7 @@
       <workItem from="1702911245685" duration="4772000" />
       <workItem from="1702916674561" duration="4795000" />
       <workItem from="1703237893496" duration="93000" />
-      <workItem from="1703238045578" duration="12593000" />
+      <workItem from="1703238045578" duration="16943000" />
     </task>
     <task id="LOCAL-00001" summary="refactored code serializers">
       <option name="closed" value="true" />

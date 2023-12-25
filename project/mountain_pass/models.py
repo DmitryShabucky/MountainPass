@@ -49,9 +49,9 @@ class Pereval(models.Model):
 
 
 class Coords(models.Model):
-    latitude = models.FloatField(max_length=10, blank=False, verbose_name='Широта')
-    longitude = models.FloatField(max_length=10, blank=False, verbose_name="Долгота")
-    height = models.IntegerField(blank=False, verbose_name='Высота')
+    latitude = models.FloatField(max_length=10, blank=True, verbose_name='Широта')
+    longitude = models.FloatField(max_length=10, blank=True, verbose_name="Долгота")
+    height = models.IntegerField(blank=True, verbose_name='Высота')
 
     class Meta:
         verbose_name = 'Координат'
