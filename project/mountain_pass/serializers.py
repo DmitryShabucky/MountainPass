@@ -33,10 +33,12 @@ class PerevalSerializer(WritableNestedModelSerializer):
 
     class Meta:
         model = Pereval
-        fields = ['status', 'beauty_title', 'title', 'other_title', 'connect', 'add_time', 'user', 'coords', 'level',
-                  'images']
+        fields = ['beauty_title', 'title', 'other_title', 'connect', 'add_time', 'user', 'coords', 'level',
+                  'images', 'status']
 
     def create(self, validated_data, **kwargs):
+        """производит повторное использование объекта модели AppUser,
+           если он существует, при создании объекта модели Pereval"""
         user = validated_data.pop('user')
         coords = validated_data.pop('coords')
         level = validated_data.pop('level')
@@ -55,6 +57,8 @@ class PerevalSerializer(WritableNestedModelSerializer):
         return pereval
 
     def validate(self, value):
+        '''производит запрет изменения полей объекта модели AppUser,
+            при изменении объекта модели Pereval'''
 
         user_data = value['user']
 

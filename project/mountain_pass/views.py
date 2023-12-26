@@ -37,6 +37,7 @@ class PerevalViewset(viewsets.ModelViewSet):
         return Response(response)
 
     def partial_update(self, request, *args, **kwargs):
+        '''проводит проверку статуса модели Pereval при её изменении'''
 
         instance = self.get_object()
         serializer = PerevalSerializer(instance, data=request.data, partial=True)
