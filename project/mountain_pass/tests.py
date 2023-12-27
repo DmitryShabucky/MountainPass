@@ -5,7 +5,7 @@ from rest_framework.test import APITestCase
 
 from .serializers import PerevalSerializer
 from .models import *
- stat
+
 
 class MountainPassTestCase(APITestCase):
 
