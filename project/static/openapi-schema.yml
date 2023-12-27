@@ -6,7 +6,7 @@ info:
 paths:
   /perevals:
     get:
-      summary: Полечение списка всех объектов Pereval
+      summary: Получение списка всех объектов Pereval
       operationId: listPerevals
       parameters:
         - in: query
@@ -49,7 +49,7 @@ paths:
 
   /perevals/{id}:
     get:
-      summary: Полечение объекта Pereval по идентификатору
+      summary: Получение объекта Pereval по идентификатору
       operationId: getPerevalById
       parameters:
         - in: path
