@@ -137,3 +137,4 @@ _Документация **swagger**: https://dimeccc.pythonanywhere.com/swagge
 
 *__Отчет о покрытии тестами:__*
 
+![}(https://github.com/DmitryShabucky/MountainPass/blob/main/pereval_tests.jpg)
