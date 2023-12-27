@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8605ee8-d6e2-43f7-9799-92262967e898" name="Changes" comment="refactored code serializers">
-      <change beforePath="$PROJECT_DIR$/project/mountain_pass/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/mountain_pass/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <workItem from="1702916674561" duration="4795000" />
       <workItem from="1703237893496" duration="93000" />
       <workItem from="1703238045578" duration="31588000" />
-      <workItem from="1703527019652" duration="27707000" />
+      <workItem from="1703527019652" duration="29043000" />
     </task>
     <task id="LOCAL-00001" summary="refactored code serializers">
       <option name="closed" value="true" />
