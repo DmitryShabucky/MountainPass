@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8605ee8-d6e2-43f7-9799-92262967e898" name="Changes" comment="refactored code serializers">
-      <change afterPath="$PROJECT_DIR$/project/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/project/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +67,9 @@
       <recent name="C:\Users\Dimec\OneDrive\Рабочий стол\Skill Factory\Проверочные работы\Итоговый поект\Спринт\1\Mountain pass" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dimec\OneDrive\Рабочий стол\Skill Factory\Проверочные работы\Итоговый поект\Спринт\1\Mountain pass" />
       <recent name="C:\Users\Dimec\OneDrive\Рабочий стол\Skill Factory\Проверочные работы\Итоговый поект\Спринт\1\Mountain pass\project" />
       <recent name="C:\Users\Dimec\OneDrive\Рабочий стол\Skill Factory\Проверочные работы\Итоговый поект\Спринт\1\Mountain pass\project\mountain_pass" />
-      <recent name="C:\Users\Dimec\OneDrive\Рабочий стол\Skill Factory\Проверочные работы\Итоговый поект\Спринт\1\Mountain pass" />
     </key>
   </component>
   <component name="SharedIndexes">
